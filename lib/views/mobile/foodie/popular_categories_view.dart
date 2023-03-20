@@ -27,6 +27,7 @@ class PopularCategoriesView extends StatelessWidget {
           LimitedBox(
             maxHeight: 124.0,
             child: ListView.builder(
+              padding: EdgeInsets.only(left: 5,right: 5),
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemCount: categories.length,

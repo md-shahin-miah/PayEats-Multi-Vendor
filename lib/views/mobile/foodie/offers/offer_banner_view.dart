@@ -20,7 +20,7 @@ class OfferBannerView extends StatelessWidget {
 
     return InkWell(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 15.0),
+        margin: const EdgeInsets.symmetric(vertical: 5.0),
         height: isTabletDesktop ? 260.0 : 180.0,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(isTabletDesktop ? 13.0 : 10.0),

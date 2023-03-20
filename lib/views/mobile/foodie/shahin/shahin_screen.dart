@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
 
-import '../../../../models/genie.dart';
+
+import '../../../../models/shahin.dart';
 import '../../../../utils/app_colors.dart';
 import '../../../../utils/ui_helper.dart';
 import '../../../../widgets/custom_divider_view.dart';
 
-class GenieScreen extends StatelessWidget {
-  const GenieScreen({Key? key}) : super(key: key);
+class ShahinScreen extends StatelessWidget {
+  const ShahinScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final services = Genie.getGenieServices();
+    final services = Shahin.getShahinServices();
 
     return Scaffold(
       body: SafeArea(
@@ -42,7 +43,7 @@ class GenieScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Text(
-                                'Genie',
+                                'Shahin',
                                 style: Theme.of(context)
                                     .textTheme
                                     .headline4!

@@ -55,8 +55,8 @@ class FoodieSafetyBannerView extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 width: cardWidth,
                 decoration: BoxDecoration(
-                  color: Colors.orange[100],
-                  border: Border.all(color: foodieOrange!, width: 2.0),
+                  color: Colors.green[100],
+                  border: Border.all(color: Colors.green!, width: 1.0),
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Row(
@@ -92,7 +92,7 @@ class FoodieSafetyBannerView extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline6!
-                                  .copyWith(color: darkOrange),
+                                  .copyWith(color: Colors.deepOrange),
                             ),
                             onPressed: () {},
                           )

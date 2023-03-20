@@ -9,7 +9,7 @@ import '../../../widgets/responsive.dart';
 import 'all_restaurants/all_restaurants_screen.dart';
 import 'best_in_safety_view.dart';
 import 'food_groceries_availability_view.dart';
-import 'genie/genie_view.dart';
+
 import 'in_the_spotlight_view.dart';
 import 'indian_food/indian_food_view.dart';
 import 'offers/offer_banner_view.dart';
@@ -18,6 +18,7 @@ import 'popular_brand_view.dart';
 import 'popular_categories_view.dart';
 import 'restaurants/restaurant_vertical_list_view.dart';
 import 'foodie_safety_banner_view.dart';
+import 'shahin/shahin_view.dart';
 import 'top_offer_view.dart';
 import 'top_picks_for_you_view.dart';
 
@@ -52,7 +53,7 @@ class FoodieScreen extends StatelessWidget {
                     const CustomDividerView(),
                     TopOffersViews(),
                     const CustomDividerView(),
-                    const GenieView(),
+                    const ShahinView(),
                     const CustomDividerView(),
                     PopularCategoriesView(),
                     const CustomDividerView(),

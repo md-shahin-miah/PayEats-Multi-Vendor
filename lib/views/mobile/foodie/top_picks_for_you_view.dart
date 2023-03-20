@@ -57,6 +57,7 @@ class TopPicksForYouView extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           boxShadow: const <BoxShadow>[
                             BoxShadow(
+
                               color: Colors.grey,
                               blurRadius: 2.0,
                             )

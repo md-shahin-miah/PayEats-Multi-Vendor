@@ -22,7 +22,7 @@ ThemeData appPrimaryTheme() => ThemeData(
       ),
       dividerColor: Colors.grey[300],
       dividerTheme: const DividerThemeData(thickness: 0.5),
-      tabBarTheme: TabBarTheme(
+      tabBarTheme: const TabBarTheme(
         labelColor: Colors.black,
         unselectedLabelColor: Colors.grey,
         indicatorSize: TabBarIndicatorSize.tab,

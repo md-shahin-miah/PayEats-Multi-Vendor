@@ -5,8 +5,8 @@ import '../../../../utils/ui_helper.dart';
 import '../../../../widgets/dotted_seperator_view.dart';
 
 
-class GenieView extends StatelessWidget {
-  const GenieView({Key? key}) : super(key: key);
+class ShahinView extends StatelessWidget {
+  const ShahinView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class GenieView extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Genie', style: Theme.of(context).textTheme.headline4),
+                    Text('Shahin', style: Theme.of(context).textTheme.headline4),
                     UIHelper.verticalSpaceSmall(),
                     Text(
                       'Anything you need, deliverd.\nPick-up, Drop or Buy anything,\nfrom anywhere in your city',
@@ -51,12 +51,12 @@ class GenieView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const <Widget>[
-              _GenieCardView(
+              _ShahinCardView(
                 title: 'Buy\nAnything',
                 desc: 'Stationery\nMedicine\nGrocery\n& more',
                 image: 'assets/images/delivery-boy.png',
               ),
-              _GenieCardView(
+              _ShahinCardView(
                 title: 'Pickup &\nDrop',
                 desc: 'Lunchbox\nCharger\nDocuments\nClothes',
                 image: 'assets/images/pizza-delivery-boy.png',
@@ -69,8 +69,8 @@ class GenieView extends StatelessWidget {
   }
 }
 
-class _GenieCardView extends StatelessWidget {
-  const _GenieCardView({
+class _ShahinCardView extends StatelessWidget {
+  const _ShahinCardView({
     Key? key,
     required this.title,
     required this.desc,
@@ -89,6 +89,7 @@ class _GenieCardView extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 5),
           padding: const EdgeInsets.only(left: 10.0, top: 10.0),
           decoration: BoxDecoration(
             border: Border.all(color: Colors.grey, width: 1.0),

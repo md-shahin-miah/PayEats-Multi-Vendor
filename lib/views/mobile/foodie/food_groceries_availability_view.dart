@@ -5,8 +5,8 @@ import '../../../utils/app_colors.dart';
 import '../../../utils/ui_helper.dart';
 import '../../../widgets/responsive.dart';
 import 'all_restaurants/all_restaurants_screen.dart';
-import 'genie/genie_grocery_card_view.dart';
-import 'genie/genie_screen.dart';
+import 'shahin/shahin_grocery_card_view.dart';
+import 'shahin/shahin_screen.dart';
 import 'meat/meat_screen.dart';
 
 class FoodGroceriesAvailabilityView extends StatelessWidget {
@@ -40,14 +40,14 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'We are now deliverying food groceries and other essentials.',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline5,
                       ),
                       UIHelper.verticalSpaceSmall(),
                       Text(
-                        'Food & Genie service (Mon-Sat)-6:00 am to 9:00pm. Groceries & Meat (Mon-Sat)-6:00 am to 6:00pm. Dairy (Mon-Sat)-6:00 am to 6:00pm (Sun)-6:00 am to 12:00 pm',
+                        'Food & Vegetable service (Mon-Sat)-6:00 am to 9:00pm. Groceries & Meat (Mon-Sat)-6:00 am to 6:00pm. Dairy (Mon-Sat)-6:00 am to 6:00pm (Sun)-6:00 am to 12:00 pm',
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                              fontSize: 16.0,
+                              fontSize: 14.0,
                               color: Colors.grey[800],
                             ),
                       )
@@ -154,8 +154,8 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              GenieGroceryCardView(
-                title: 'Genie',
+              ShahinGroceryCardView(
+                title: 'Shahin',
                 subtitle: 'Anything you need,\ndelivered',
                 image: 'assets/images/food1.jpg',
                 onTap: isTabletDesktop
@@ -164,12 +164,12 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const GenieScreen(),
+                            builder: (context) => const ShahinScreen(),
                           ),
                         );
                       },
               ),
-              GenieGroceryCardView(
+              ShahinGroceryCardView(
                 title: 'Grocery',
                 subtitle: 'Esentials delivered\nin 2 Hrs',
                 image: 'assets/images/food4.jpg',
@@ -179,12 +179,12 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const GenieScreen(),
+                            builder: (context) => const ShahinScreen(),
                           ),
                         );
                       },
               ),
-              GenieGroceryCardView(
+              ShahinGroceryCardView(
                 title: 'Meat',
                 subtitle: 'Fesh meat\ndelivered safe',
                 image: 'assets/images/food6.jpg',

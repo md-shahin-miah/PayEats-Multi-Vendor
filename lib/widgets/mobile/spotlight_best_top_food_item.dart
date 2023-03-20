@@ -30,17 +30,18 @@ class SpotlightBestTopFoodItem extends StatelessWidget {
               );
             },
       child: Container(
-        margin: const EdgeInsets.all(15.0),
+        margin: const EdgeInsets.all(5.0),
         child: Row(
           children: <Widget>[
             Container(
+              padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Colors.white,
                 boxShadow: const <BoxShadow>[
                   BoxShadow(
                     color: Colors.grey,
-                    blurRadius: 2.0,
+                    blurRadius: 4.0,
                   )
                 ],
               ),

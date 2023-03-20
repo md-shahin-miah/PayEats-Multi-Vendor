@@ -14,17 +14,17 @@ class FoodListItemView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(10.0),
       child: Row(
         children: <Widget>[
           Container(
+            margin: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: BorderRadius.circular(20.0),
               color: Colors.white,
               boxShadow: const <BoxShadow>[
                 BoxShadow(
                   color: Colors.grey,
-                  blurRadius: 2.0,
+                  blurRadius: 4.0,
                 )
               ],
             ),

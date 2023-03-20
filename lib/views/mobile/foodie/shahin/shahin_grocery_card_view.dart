@@ -4,8 +4,8 @@ import '../../../../utils/app_colors.dart';
 import '../../../../utils/ui_helper.dart';
 
 
-class GenieGroceryCardView extends StatelessWidget {
-  const GenieGroceryCardView({
+class ShahinGroceryCardView extends StatelessWidget {
+  const ShahinGroceryCardView({
     Key? key,
     required this.title,
     required this.image,
@@ -27,10 +27,10 @@ class GenieGroceryCardView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             ClipRRect(
-              borderRadius: BorderRadius.circular(16.0),
+              borderRadius: BorderRadius.circular(10.0),
               child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 4.0),
-                padding: const EdgeInsets.only(top: 8.0),
+                margin: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10),
+                // padding: const EdgeInsets.only(top: 8.0),
                 height: 120.0,
                 decoration: BoxDecoration(
                   color: foodieOrange,
@@ -66,7 +66,7 @@ class GenieGroceryCardView extends StatelessWidget {
                 ),
               ),
             ),
-            UIHelper.verticalSpaceMedium(),
+            // UIHelper.verticalSpaceMedium(),
             Text(
               subtitle,
               maxLines: 2,

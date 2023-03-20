@@ -16,7 +16,8 @@ class PopularBrandsView extends StatelessWidget {
     final isTabletDesktop = Responsive.isTabletDesktop(context);
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
+      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -25,7 +26,7 @@ class PopularBrandsView extends StatelessWidget {
           LimitedBox(
             maxHeight: 170.0,
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: ListView.builder(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
@@ -43,7 +44,7 @@ class PopularBrandsView extends StatelessWidget {
                           );
                         },
                   child: Container(
-                    margin: const EdgeInsets.only(right: 15.0),
+                    margin: const EdgeInsets.symmetric(vertical: 5.0,horizontal: 5),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[

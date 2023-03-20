@@ -82,6 +82,7 @@ class BestInSafetyViews extends StatelessWidget {
           LimitedBox(
             maxHeight: 270.0,
             child: ListView.builder(
+              padding: EdgeInsets.only(left: 10,right: 10),
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemCount: restaurants.length,
